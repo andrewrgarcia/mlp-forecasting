@@ -1,7 +1,6 @@
 import torch
 
-# Generate a more complex nonlinear time series
-def generate_more_complex_series(length):
+def generate_moderately_nonlinear_series(length):
     data = [0.5] * 10  # Initial values for 10 lags
     for t in range(10, length):
         prev_values = torch.tensor(data[t-10:t])
